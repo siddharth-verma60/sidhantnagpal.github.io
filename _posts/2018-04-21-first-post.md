@@ -1,12 +1,10 @@
 ---
 layout: post
 title: "First Post"
-summary: "First Post summary"
+summary: "This is a testing post"
+comments: false
 category:
 tags:
-- github
-- open source
-- jekyll
 ---
 
 The quick brown fox jumps over the lazy dog.

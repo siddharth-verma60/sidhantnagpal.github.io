@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Sidhant Nagpal - GSoC</title>
+        <description>Tag: GSoC</description>
+        <lastBuildDate>2018-04-24T02:26:08+05:30</lastBuildDate>
+        <pubDate>2018-04-24T02:26:08+05:30</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>Selected for GSoC '18</title>
+                <description>&lt;p&gt;I am extremely glad to inform that my &lt;a href=&quot;https://github.com/sidhantnagpal/gsoc/wiki/GSoC-2018-Application-Sidhant-Nagpal:-Transforms,-Convolution-&amp;amp;-Linear-Recurrence-Evaluation&quot;&gt;proposal&lt;/a&gt; ‘Transforms, Convolution &amp;amp; Linear Recurrence Evaluation’ has been accepted by SymPy for Google Summer of Code 2018.&lt;/p&gt;
+
+&lt;p&gt;For the unitiated, SymPy is a Computer Algebra System (CAS) written entirely in Python.&lt;/p&gt;
+
+&lt;p&gt;My official mentors are Aaron Meurer (&lt;a href=&quot;https://github.com/asmeurer&quot;&gt;asmeurer&lt;/a&gt;) and Kalevi Suominen (&lt;a href=&quot;https://github.com/jksuom&quot;&gt;jksuom&lt;/a&gt;). Aaron started the SymPy library in 2007 and is currently leading its development. Kalevi (SymPy Member) has mentored for GSoC in 2016 and 2017. I am extremely lucky to have gotten an opportunity to work with such experienced developers.&lt;/p&gt;
+
+&lt;p&gt;During the Community Bonding Period, I will complete the following tasks:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Setting up the blog with RSS feed for GSoC posts (for &lt;a href=&quot;[planet.sympy.org]&quot;&gt;planet.sympy.org&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;Discussing the possible modes of communication, and getting information for timings and weekly meetings.&lt;/li&gt;
+  &lt;li&gt;Resolving any other issues that might arise during the Coding Period.&lt;/li&gt;
+  &lt;li&gt;Getting the details for expected work to be done, discussing the API of the modules to be implemented and studying the existing modules which might be used.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I would like to thank the SymPy team, especially my mentors - Aaron Meurer and Kalevi Suominen.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to a great summer.&lt;/p&gt;
+</description>
+                <link>https://sidhantnagpal.github.io/2018/04/gsoc-1.html</link>
+                <guid>https://sidhantnagpal.github.io/2018/04/gsoc-1</guid>
+                <pubDate>2018-04-24T00:00:00+05:30</pubDate>
+        </item>
+
+
+</channel>
+</rss>
