@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:title.html
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "CHANGELOG.md"]
 auto: true
 highlighter: rouge
 markdown: kramdown
@@ -11,6 +11,7 @@ markdown: kramdown
 # so be sure to set them if your theme uses them.
 #
 title : Sidhant Nagpal
+# tagline: Blog
 email: sidhantnagpal97 [at] gmail.com
 description: >
   Hi, I am Sidhant Nagpal. Welcome to my blog.
@@ -21,7 +22,7 @@ author :
   github : sidhantnagpal
   linkedin : sidhantnagpal
   gitter : sidhantnagpal
-  #feedburner : feedname
+  # feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -87,22 +88,33 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-  provider : false
-  disqus :
-    short_name : sidhantnagpal
+    provider : disqus
+    disqus :
+      short_name : sidhantnagpal
+  #   livefyre :
+  #     site_id : 123
+  #   intensedebate :
+  #     account : 123abc
+  #   facebook :
+  #     appid : 123
+  #     num_posts: 5
+  #     width: 580
+  #     colorscheme: light
+  #   duoshuo :
+  #     short_name : jekyllbootstrap
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
   #
-  # analytics :
-  #  provider : statcounter
-  #   google :
-  #      tracking_id : 'UA-123-12'
+  analytics :
+    provider : google
+    google :
+      tracking_id : 'UA-118226158-1'
   #   getclicky :
-  #    site_id :
+  #   	site_id :
   #   mixpanel :
-  #      token : '_MIXPANEL_TOKEN_'
+  #     token : '_MIXPANEL_TOKEN_'
 
   # Settings for sharing helper.
   # Sharing is for things like tweet, plusone, like, reddit buttons etc.
