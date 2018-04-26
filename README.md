@@ -1,1 +1,1 @@
-This is a fork of [jekyllbootstrap](https://github.com/plusjade/jekyll-bootstrap).
+Maintained with help from [JekyllBootstrap](https://github.com/plusjade/jekyll-bootstrap).
