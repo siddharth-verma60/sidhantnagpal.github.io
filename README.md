@@ -1,1 +1,1 @@
-Maintained with help from [JekyllBootstrap](https://github.com/plusjade/jekyll-bootstrap).
+Maintained with help from [jekyll-bootstrap](https://github.com/plusjade/jekyll-bootstrap).
