@@ -4,7 +4,7 @@
  <title>Sidhant Nagpal</title>
  <link href="https://sidhantnagpal.github.io/" rel="self"/>
  <link href="https://sidhantnagpal.github.io"/>
- <updated>2018-04-28T10:31:26+05:30</updated>
+ <updated>2018-04-29T17:40:30+05:30</updated>
  <id>https://sidhantnagpal.github.io</id>
  <author>
    <name>Sidhant Nagpal</name>
@@ -21,7 +21,7 @@
 
 &lt;p&gt;For the unitiated, SymPy is a Computer Algebra System (CAS) written entirely in Python. SymPy was started as a project by Ondrej Certik (&lt;a href=&quot;https://github.com/certik&quot;&gt;certik&lt;/a&gt;) in 2006. SymPy has participated in every Google Summer of Code since 2007.&lt;/p&gt;
 
-&lt;p&gt;My official mentors are Aaron Meurer (&lt;a href=&quot;https://github.com/asmeurer&quot;&gt;asmeurer&lt;/a&gt;) and Kalevi Suominen (&lt;a href=&quot;https://github.com/jksuom&quot;&gt;jksuom&lt;/a&gt;).  Aaron Meurer (who also joined from GSoC) is the lead developer of SymPy since 2011. Kalevi Suominen (SymPy Member) has mentored for Google Summer of Code in 2016 and 2017. I am extremely lucky to have gotten an opportunity to work with such experienced developers.&lt;/p&gt;
+&lt;p&gt;My official mentors are Aaron Meurer (&lt;a href=&quot;https://github.com/asmeurer&quot;&gt;asmeurer&lt;/a&gt;) and Kalevi Suominen (&lt;a href=&quot;https://github.com/jksuom&quot;&gt;jksuom&lt;/a&gt;). Aaron Meurer (who also joined from GSoC) is the lead developer of SymPy since 2011. Kalevi Suominen (SymPy Member) has mentored for Google Summer of Code in 2016 and 2017. I am extremely lucky to have gotten an opportunity to work with such experienced developers.&lt;/p&gt;
 
 &lt;p&gt;During the Community Bonding Period, I will complete the following tasks:&lt;/p&gt;
 &lt;ol&gt;
