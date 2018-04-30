@@ -15,7 +15,7 @@ body {
     font-size: 2.2em;
     font-family: Calibri, Arial, Helvetica, sans-serif;
     letter-spacing: -0.05em;
-    /*font-weight:bold;*/
+    /*font-weight: bold;*/
     /*text-shadow: 1px 1px 1px rgb(78, 78, 78);*/
     margin-left: 0.5em;
     float: left;
@@ -52,6 +52,18 @@ body {
     padding: 0.35em;
     /*font-weight: bold;*/
     font-family: Calibri, Arial, Helvetica, sans-serif;
+}
+
+.social {
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    padding: 20px 0 0;
+}
+
+.social a {
+    font-size: 10px;
+    padding: 0 12px;
 }
 
 .content-main {
@@ -147,8 +159,10 @@ pre {
     border-radius: 20px;
 }
 
-.the-footer a, #about-me a {color: #b6d9fb; text-decoration:none; border-bottom: 1px dashed #b6d9fb; }
-.the-footer a:hover, #about-me a:hover {border-bottom: 1px solid #b6d9fb; }
+/*.the-footer a, #about-me a {color: #b6d9fb; text-decoration:none; border-bottom: 1px dashed #b6d9fb; }*/
+/*.the-footer a:hover, #about-me a:hover {border-bottom: 1px solid #b6d9fb; }*/
+.the-footer a, #about-me a {color: #b6d9fb; text-decoration:none; border-bottom: 1px; }
+.the-footer a:hover, #about-me a:hover {border-bottom: 1px; }
 
 #about-me h2, .the-footer h2 {margin-top: 8px;}
 
