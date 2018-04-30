@@ -1,7 +1,7 @@
 @import "syntaxhighlighter.css";
 @import "droidsans.css";
 @import "oswald.css";
-@imoprt "calibri.css";
+/*@import "calibri.css";*/
 
 body {
     font-family: "Calibri", sans-serif;
@@ -11,23 +11,24 @@ body {
 
 .brand {
     text-decoration: none;
-    color: #222;
+    color: #ddd;
     font-size: 2.3em;
-    font-family: Calibri,Arial,Helvetica,sans-serif;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
     letter-spacing: -0.05em;
     /*font-weight:bold;*/
-    /*text-shadow: 1px 1px 1px rgb(119, 119, 119);*/
-    margin-left:0.5em;
-    float:left;
+    /*text-shadow: 1px 1px 1px rgb(78, 78, 78);*/
+    margin-left: 0.5em;
+    float: left;
 }
 
 .brandin {
-    color:#666;
+    color: #ddd;
+    font-family: monospace;
     font-size: 0.73em;
 }
 
 .navbar {
-    background-color: #cfcfcf;
+    background-color: #3a3a3a;
     /* position: fixed; for screen>750px, postion: absolute; for screen <750px */
     top: 0px;
     right: 0px;
@@ -37,7 +38,6 @@ body {
 }
 
 .nav {
-
     display: inline;
     float: right;
     margin: 1em 10px 0px 0px;
@@ -47,7 +47,7 @@ body {
 
 .nav_link {
     text-decoration: none;
-    color: #111;
+    color: #ddd;
     font-size: 1.1em;
     padding: 0.35em;
     /*font-weight: bold;*/
@@ -55,9 +55,9 @@ body {
 }
 
 .content-main {
-    //margin-top: 45px;
-    //margin-left: 21%;
-    //margin-right: 21%;
+    /*margin-top: 45px;*/
+    /*margin-left: 21%;*/
+    /*margin-right: 21%;*/
     /*line-height: 1.25em;*/
     padding: 3%;
     font-size: 1.1em;
