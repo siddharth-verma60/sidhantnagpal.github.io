@@ -6,15 +6,15 @@
 </description>
         <link>https://sidhantnagpal.github.io</link>
         <link>https://sidhantnagpal.github.io</link>
-        <lastBuildDate>2018-05-18T14:31:50+05:30</lastBuildDate>
-        <pubDate>2018-05-18T14:31:50+05:30</pubDate>
+        <lastBuildDate>2018-05-18T14:43:40+05:30</lastBuildDate>
+        <pubDate>2018-05-18T14:43:40+05:30</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
                 <title>Selected for GSoC '18</title>
-                <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc.png&quot; style=&quot;width:30%; height:30%; float:left; margin-left:75px;&quot; /&gt;
-&lt;img src=&quot;/files/sympy.png&quot; style=&quot;width:25%; height:25%; float:right; margin-right:175px;&quot; /&gt;
+                <description>&lt;p&gt;&lt;img src=&quot;https://sidhantnagpal.github.io/files/gsoc.png&quot; style=&quot;width:30%; height:30%; float:left; margin-left:50px;&quot; /&gt;
+&lt;img src=&quot;https://sidhantnagpal.github.io/files/sympy.png&quot; style=&quot;width:25%; height:25%; float:right; margin-right:200px;&quot; /&gt;
 &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;p&gt;I am extremely glad to inform that my &lt;a href=&quot;https://summerofcode.withgoogle.com/dashboard/project/5222530349006848/overview&quot;&gt;proposal&lt;/a&gt; ‘Transforms, Convolution &amp;amp; Linear Recurrence Evaluation’ has been accepted by SymPy for Google Summer of Code 2018.&lt;/p&gt;
