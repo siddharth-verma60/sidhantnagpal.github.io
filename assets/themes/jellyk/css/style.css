@@ -75,6 +75,16 @@ body {
     font-size: 1.1em;
 }
 
+code {
+    /*font-weight: bold;*/
+    font-size: 1.3em;
+}
+
+/*pre > code {
+  background-color: AliceBlue;
+  color: Blue;
+}*/
+
 .content-main img {
     max-width: 100%
 }
@@ -137,7 +147,7 @@ pre {
     border-radius: 5px;
 }
 
-.disabled, .disabled:hover {     
+.disabled, .disabled:hover {
     background-color: #4C5567;
     border-radius: 5px;
     color: #bbb;
