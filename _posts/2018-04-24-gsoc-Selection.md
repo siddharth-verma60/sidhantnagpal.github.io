@@ -10,7 +10,7 @@ tags:
 ---
 
 <img src="/files/gsoc-sympy.png" style="width:80%; height:80%; float:left; margin-left:50px;" />
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br clear="all" />
 
 I am extremely glad to inform that my [proposal](https://summerofcode.withgoogle.com/dashboard/project/5222530349006848/overview) 'Transforms, Convolution & Linear Recurrence Evaluation' has been accepted by SymPy for Google Summer of Code 2018.
 

@@ -10,5 +10,5 @@ tags:
 ---
 
 <img src="/files/gsoc-sympy.png" style="width:80%; height:80%; float:left; margin-left:50px;" />
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br clear="all" />
 
