@@ -9,4 +9,6 @@ https://sidhantnagpal.github.io/rss.xml
 https://sidhantnagpal.github.io/sitemap.txt
 https://sidhantnagpal.github.io/tags
 
-https://sidhantnagpal.github.io/2018/04/gsoc-1.html
+https://sidhantnagpal.github.io/2018/05/gsoc-Week1.html
+https://sidhantnagpal.github.io/2018/05/gsoc-CommunityBonding.html
+https://sidhantnagpal.github.io/2018/04/gsoc-Selection.html
