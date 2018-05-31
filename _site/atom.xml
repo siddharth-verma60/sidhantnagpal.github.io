@@ -4,7 +4,7 @@
  <title>Sidhant Nagpal</title>
  <link href="https://sidhantnagpal.github.io/" rel="self"/>
  <link href="https://sidhantnagpal.github.io"/>
- <updated>2018-05-27T11:59:35+05:30</updated>
+ <updated>2018-05-31T18:01:00+05:30</updated>
  <id>https://sidhantnagpal.github.io</id>
  <author>
    <name>Sidhant Nagpal</name>
@@ -20,11 +20,11 @@
    <content type="html">&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;The community bonding period has concluded. As proposed, I have gone through the existing modules and have thought about various aspects of the implementation which needed to be taken care of. I have reached out to my mentors and the discussion will take place on &lt;code class=&quot;highlighter-rouge&quot;&gt;gitter&lt;/code&gt; under &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy/discrete&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The community bonding period has concluded. As proposed, I have gone through the existing modules and have thought about various aspects of the implementation which needed to be taken care of. The discussion for the project will take place on &lt;code class=&quot;highlighter-rouge&quot;&gt;gitter&lt;/code&gt; under &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy/discrete&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Discussion for API is premature but it will shape as the Coding Period commences. Meanwhile, I have control of what all needs to be done in accordance with the proposed timeline.&lt;/p&gt;
 
-&lt;p&gt;Having contributed previously to SymPy, I am familiar with the workflow and methodologies. So, during this period I helped new contributors get started and also helped review existing PRs - &lt;a href=&quot;https://github.com/sympy/sympy/pull/14679&quot;&gt;#14678&lt;/a&gt;, &lt;a href=&quot;https://github.com/sympy/sympy/pull/14698&quot;&gt;#14698&lt;/a&gt; and &lt;a href=&quot;https://github.com/sympy/sympy/pull/14707&quot;&gt;#14707&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Being familiar with the development workflow and having contributed to SymPy, I assisted new contributors and also helped review existing PRs - &lt;a href=&quot;https://github.com/sympy/sympy/pull/14679&quot;&gt;#14678&lt;/a&gt;, &lt;a href=&quot;https://github.com/sympy/sympy/pull/14698&quot;&gt;#14698&lt;/a&gt; and &lt;a href=&quot;https://github.com/sympy/sympy/pull/14707&quot;&gt;#14707&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Looking forward to Coding Period.&lt;/p&gt;
 </content>
