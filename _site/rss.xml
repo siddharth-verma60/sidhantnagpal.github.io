@@ -6,8 +6,8 @@
 </description>
         <link>https://sidhantnagpal.github.io</link>
         <link>https://sidhantnagpal.github.io</link>
-        <lastBuildDate>2018-06-02T12:55:13+05:30</lastBuildDate>
-        <pubDate>2018-06-02T12:55:13+05:30</pubDate>
+        <lastBuildDate>2018-06-02T12:59:21+05:30</lastBuildDate>
+        <pubDate>2018-06-02T12:59:21+05:30</pubDate>
         <ttl>1800</ttl>
 
 
@@ -18,7 +18,7 @@
 
 &lt;p&gt;The first week of Coding Period has concluded.&lt;/p&gt;
 
-&lt;p&gt;I started the week working on the PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14712&quot;&gt;#14712&lt;/a&gt; to fix existing issues &lt;a href=&quot;https://github.com/sympy/sympy/issues/14262&quot;&gt;#14262&lt;/a&gt; and &lt;a href=&quot;https://github.com/sympy/sympy/issues/12744&quot;&gt;#12744&lt;/a&gt;. There were some complications caused by the PR as it was affecting the &lt;code class=&quot;highlighter-rouge&quot;&gt;solvers&lt;/code&gt; module. The failing tests on travis revealed some bugs and issues in &lt;code class=&quot;highlighter-rouge&quot;&gt;solvers&lt;/code&gt;. The bugs are fixed, with help from the community (though minor issues still persist).&lt;/p&gt;
+&lt;p&gt;I started the week working on the PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14712&quot;&gt;#14712&lt;/a&gt; to fix existing issues &lt;a href=&quot;https://github.com/sympy/sympy/issues/14262&quot;&gt;#14262&lt;/a&gt; and &lt;a href=&quot;https://github.com/sympy/sympy/issues/12744&quot;&gt;#12744&lt;/a&gt;. There were some complications caused by the PR as it was affecting the &lt;code class=&quot;highlighter-rouge&quot;&gt;solvers&lt;/code&gt; module. The failing tests on travis revealed some bugs and issues in &lt;code class=&quot;highlighter-rouge&quot;&gt;solvers&lt;/code&gt;. The bugs are fixed, though minor issues still persist.&lt;/p&gt;
 
 &lt;p&gt;Late this week, I started working on the first &lt;a href=&quot;https://github.com/sympy/sympy/pull/14725&quot;&gt;PR #14725&lt;/a&gt; as part of my project with the aim of adding the following along with appropriate tests.&lt;/p&gt;
 &lt;ul&gt;
