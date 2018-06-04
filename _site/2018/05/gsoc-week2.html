@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 
     
-    <title>Sidhant Nagpal | Archive</title>
+    <title>Sidhant Nagpal | GSoC '18 SymPy - Week 2</title>
     
 
     
@@ -58,90 +58,100 @@
       <div class="content-main">
         
 
-
 <div class="page-header">
-  <h1>Archive</h1>
+  <h1>GSoC '18 SymPy - Week 2 </h1>
 </div>
 
-
-<div class="row-fluid">
+<div class="row-fluid post-full">
   <div class="span12">
-    
+    <div class="content">
+      <p><img src="/files/gsoc-sympy.png" style="width:80%; height:80%; float:left; margin-left:50px;" />
+<br clear="all" /></p>
 
+<p>The second week of Coding Period has concluded.</p>
 
+<p>I started the week by finalizing the PR <a href="https://github.com/sympy/sympy/pull/14725">#14725</a>. The PR has been merged successfully. Fast Walsh Hadamard Transform (<code class="highlighter-rouge">fwht</code>) will be added along with XOR Convolution at a later point of time.</p>
 
+<p>Late this week, I started working on the convolution module <a href="https://github.com/sympy/sympy/pull/14745">PR #14745</a> with the aim of adding the following along with appropriate tests.</p>
+<ul>
+  <li>Convolution using Fast Fourier Transform (<code class="highlighter-rouge">convolution_fft</code>)</li>
+  <li>Convolution using Number Theoretic Transform (<code class="highlighter-rouge">convolution_ntt</code>)</li>
+  <li>General Convolution method (<code class="highlighter-rouge">convolution</code>)</li>
+</ul>
 
+<p><a href="https://github.com/jksuom">Kalevi</a> and <a href="https://github.com/asmeurer">Aaron</a> suggested using <code class="highlighter-rouge">convolution</code> as the name for the methods instead of <code class="highlighter-rouge">conv</code>.
+I had a detailed discussion with <a href="https://github.com/jksuom">Kalevi</a> regarding the API of the methods, the need to tie convolution with DFT (Discrete Fourier Transform), and handling the cyclic convolution case.</p>
+
+<p>Successive reviews helped in the following changes to PR:</p>
+<ul>
+  <li>including <code class="highlighter-rouge">cycle</code> for general <code class="highlighter-rouge">convolution</code> method</li>
+  <li>usage of <code class="highlighter-rouge">**hints</code> argument in <code class="highlighter-rouge">convolution</code> for flexibility of the API</li>
+  <li>handling empty list <code class="highlighter-rouge">[]</code> cases</li>
+  <li>defaulting <code class="highlighter-rouge">cycle=0</code> as normal convolution</li>
+</ul>
+
+<p>Looking forward to another exciting week.</p>
+
+    </div>
+
+    <div class="date">
+      <span><b>Published: </b>29 May 2018</span>
+    </div>
+
+  
+
+  
+    <ul class="tag_box inline">
+      <li class="inline"><b>Tags: </b></li>
+      
+      
 
 
   
-    
-    
-    
+     
+    	<li><a href="/tags.html#gsoc-ref">gsoc <span>4</span></a></li>
+     
+    	<li><a href="/tags.html#sympy-ref">sympy <span>4</span></a></li>
     
   
-    
-      <h2>2018</h2>
-      <h3>May</h3>
+
+
+
+    </ul>
+  
+
+    <div class="pagination">
       <ul>
-    
-  
-    <li><span>May 29, 2018</span> &raquo; <a href="/2018/05/gsoc-week2.html">GSoC '18 SymPy - Week 2</a></li>
-  
-    
-          
-        
       
-    
-  
-    
-    
-    
-    
-  
-    
-  
-    <li><span>May 23, 2018</span> &raquo; <a href="/2018/05/gsoc-week1.html">GSoC '18 SymPy - Week 1</a></li>
-  
-    
-          
-        
+        <li class="prev"><a href="/2018/05/gsoc-week1.html" title="GSoC '18 SymPy - Week 1">&larr; Previous</a></li>
       
-    
-  
-    
-    
-    
-    
-  
-    
-  
-    <li><span>May 16, 2018</span> &raquo; <a href="/2018/05/gsoc-community-bonding.html">GSoC '18 SymPy - Community Bonding</a></li>
-  
-    
-          
-        
-          </ul>
-          <h3>April</h3>
-          <ul>
-        
+        <li class="archive"><a href="/archive.html">Archive</a></li>
       
-    
-  
-    
-    
-    
-    
-  
-    
-  
-    <li><span>April 24, 2018</span> &raquo; <a href="/2018/04/gsoc-selection.html">Selected for GSoC '18</a></li>
-  
-    
+        <li class="disabled">Next &rarr;</li>
+      
       </ul>
+    </div>
     
-  
 
 
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'sidhantnagpal'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+    <br />
   </div>
 </div>
 
