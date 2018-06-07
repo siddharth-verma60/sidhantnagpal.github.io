@@ -6,10 +6,28 @@
 </description>
         <link>https://sidhantnagpal.github.io</link>
         <link>https://sidhantnagpal.github.io</link>
-        <lastBuildDate>2018-06-04T19:12:16+05:30</lastBuildDate>
-        <pubDate>2018-06-04T19:12:16+05:30</pubDate>
+        <lastBuildDate>2018-06-07T20:54:53+05:30</lastBuildDate>
+        <pubDate>2018-06-07T20:54:53+05:30</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>GSoC '18 SymPy - Week 3</title>
+                <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
+&lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The third week of Coding Period has concluded.&lt;/p&gt;
+
+&lt;p&gt;I started the week by finalizing the PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14745&quot;&gt;#14745&lt;/a&gt;. The PR has been merged successfully. The master branch of &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy&lt;/code&gt; now contains &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy.discrete.transforms&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy.discrete.convolution&lt;/code&gt;. I have tested corner cases as well. Documentation and Doctests are complete for the transforms and types of convolution that are currently part of master.&lt;/p&gt;
+
+&lt;p&gt;Late this week, I pushed commits to &lt;a href=&quot;https://github.com/sympy/sympy/pull/14712&quot;&gt;PR #14712&lt;/a&gt; with the aim of fixing failing tests in &lt;code class=&quot;highlighter-rouge&quot;&gt;test_util.py&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;test_inequalities.py&lt;/code&gt; due to &lt;code class=&quot;highlighter-rouge&quot;&gt;solveset&lt;/code&gt;. The remaining tests are failing as &lt;code class=&quot;highlighter-rouge&quot;&gt;solvers&lt;/code&gt; can not currently solve the transcendental equations when rewritten in exponential form.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to next week, where I will be working on the Fast Walsh Hadamard Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt;).&lt;/p&gt;
+</description>
+                <link>https://sidhantnagpal.github.io/2018/06/gsoc-week3.html</link>
+                <guid>https://sidhantnagpal.github.io/2018/06/gsoc-week3</guid>
+                <pubDate>2018-06-03T00:00:00+05:30</pubDate>
+        </item>
 
         <item>
                 <title>GSoC '18 SymPy - Week 2</title>
