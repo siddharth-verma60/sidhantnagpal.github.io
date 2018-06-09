@@ -12,5 +12,6 @@ https://sidhantnagpal.github.io/tags
 https://sidhantnagpal.github.io/2018/06/gsoc-week3.html
 https://sidhantnagpal.github.io/2018/05/gsoc-week2.html
 https://sidhantnagpal.github.io/2018/05/gsoc-week1.html
+https://sidhantnagpal.github.io/2018/05/gsoc-2.html
 https://sidhantnagpal.github.io/2018/05/gsoc-community-bonding.html
-https://sidhantnagpal.github.io/2018/04/gsoc-selection.html
+https://sidhantnagpal.github.io/2018/04/gsoc-Selection.html
