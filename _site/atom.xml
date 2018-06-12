@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Sidhant Nagpal</title>
+ <link href="https://sidhantnagpal.github.io/" rel="self"/>
+ <link href="https://sidhantnagpal.github.io"/>
+ <updated>2018-06-12T18:28:58+05:30</updated>
+ <id>https://sidhantnagpal.github.io</id>
+ <author>
+   <name>Sidhant Nagpal</name>
+   <email>sidhantnagpal97@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>GSoC '18 SymPy - Week 4</title>
+   <link href="https://sidhantnagpal.github.io/2018/06/gsoc-week4.html"/>
+   <updated>2018-06-09T00:00:00+05:30</updated>
+   <id>https://sidhantnagpal.github.io/2018/06/gsoc-week4</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
+&lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Another week of Coding Period has concluded.&lt;/p&gt;
+
+&lt;p&gt;Starting this week, I worked on PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14745&quot;&gt;#14765&lt;/a&gt; for implementing Fast Walsh Hadamard Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;As pointed out by &lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt;, symbolic coefficients could be supported by this transform as the general Kronecker matrix only contains &lt;code class=&quot;highlighter-rouge&quot;&gt;+/-1&lt;/code&gt;, which means it essentialy requires only addition or subtraction to perform the transformation. Also, the PR review helped fix a minor issue related to string concatenation.&lt;/p&gt;
+
+&lt;p&gt;Usage for &lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt; looks like:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sympy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fwht&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ifwht&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symbols&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fwht&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ifwht&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symbols&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'a b c d'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fwht&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ifwht&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Documentation, doctests, and unit tests are also added for this transform.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to next week, where I will be implementing XOR convolution using &lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GSoC '18 SymPy - Week 3</title>
+   <link href="https://sidhantnagpal.github.io/2018/06/gsoc-week3.html"/>
+   <updated>2018-06-03T00:00:00+05:30</updated>
+   <id>https://sidhantnagpal.github.io/2018/06/gsoc-week3</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
+&lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The third week of Coding Period has concluded.&lt;/p&gt;
+
+&lt;p&gt;I started the week by finalizing the PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14745&quot;&gt;#14745&lt;/a&gt;. The PR has been merged successfully. The master branch of &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy&lt;/code&gt; now contains &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy.discrete.transforms&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy.discrete.convolution&lt;/code&gt;. I have tested corner cases as well. Documentation and Doctests are complete for the transforms and types of convolution that are currently part of master.&lt;/p&gt;
+
+&lt;p&gt;Late this week, I pushed commits to &lt;a href=&quot;https://github.com/sympy/sympy/pull/14712&quot;&gt;PR #14712&lt;/a&gt; with the aim of fixing failing tests in &lt;code class=&quot;highlighter-rouge&quot;&gt;test_util.py&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;test_inequalities.py&lt;/code&gt; due to &lt;code class=&quot;highlighter-rouge&quot;&gt;solveset&lt;/code&gt;. The remaining tests are failing as &lt;code class=&quot;highlighter-rouge&quot;&gt;solvers&lt;/code&gt; can not currently solve the transcendental equations when rewritten in exponential form.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to next week, where I will be working on the Fast Walsh Hadamard Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt;).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GSoC '18 SymPy - Week 2</title>
+   <link href="https://sidhantnagpal.github.io/2018/05/gsoc-week2.html"/>
+   <updated>2018-05-29T00:00:00+05:30</updated>
+   <id>https://sidhantnagpal.github.io/2018/05/gsoc-week2</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
+&lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second week of Coding Period has concluded.&lt;/p&gt;
+
+&lt;p&gt;I started the week by finalizing the PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14725&quot;&gt;#14725&lt;/a&gt;. The PR has been merged successfully. Fast Walsh Hadamard Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt;) will be added along with XOR Convolution at a later point of time.&lt;/p&gt;
+
+&lt;p&gt;Late this week, I started working on the convolution module &lt;a href=&quot;https://github.com/sympy/sympy/pull/14745&quot;&gt;PR #14745&lt;/a&gt; with the aim of adding the following along with appropriate tests.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Convolution using Fast Fourier Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;convolution_fft&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Convolution using Number Theoretic Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;convolution_ntt&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;General Convolution method (&lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt; and &lt;a href=&quot;https://github.com/asmeurer&quot;&gt;Aaron&lt;/a&gt; suggested using &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; as the name for the methods instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;conv&lt;/code&gt;.
+I had a detailed discussion with &lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt; regarding the API of the methods, the need to tie convolution with DFT (Discrete Fourier Transform), and handling the cyclic convolution case.&lt;/p&gt;
+
+&lt;p&gt;Successive reviews helped in the following changes to PR:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;including &lt;code class=&quot;highlighter-rouge&quot;&gt;cycle&lt;/code&gt; for general &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; method&lt;/li&gt;
+  &lt;li&gt;usage of &lt;code class=&quot;highlighter-rouge&quot;&gt;**hints&lt;/code&gt; argument in &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; for flexibility of the API&lt;/li&gt;
+  &lt;li&gt;handling empty list &lt;code class=&quot;highlighter-rouge&quot;&gt;[]&lt;/code&gt; cases&lt;/li&gt;
+  &lt;li&gt;defaulting &lt;code class=&quot;highlighter-rouge&quot;&gt;cycle=0&lt;/code&gt; as normal convolution&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Looking forward to another exciting week.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GSoC '18 SymPy - Week 1</title>
+   <link href="https://sidhantnagpal.github.io/2018/05/gsoc-week1.html"/>
+   <updated>2018-05-23T00:00:00+05:30</updated>
+   <id>https://sidhantnagpal.github.io/2018/05/gsoc-week1</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
+&lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The first week of Coding Period has concluded.&lt;/p&gt;
+
+&lt;p&gt;I started the week working on the PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14712&quot;&gt;#14712&lt;/a&gt; to fix existing issues &lt;a href=&quot;https://github.com/sympy/sympy/issues/14262&quot;&gt;#14262&lt;/a&gt; and &lt;a href=&quot;https://github.com/sympy/sympy/issues/12744&quot;&gt;#12744&lt;/a&gt;. There were some complications caused by the PR as it was affecting the &lt;code class=&quot;highlighter-rouge&quot;&gt;solvers&lt;/code&gt; module. The failing tests on travis revealed some bugs and issues in &lt;code class=&quot;highlighter-rouge&quot;&gt;solvers&lt;/code&gt;. The bugs are fixed, though minor issues still persist.&lt;/p&gt;
+
+&lt;p&gt;Late this week, I started working on the first &lt;a href=&quot;https://github.com/sympy/sympy/pull/14725&quot;&gt;PR #14725&lt;/a&gt; as part of my project with the aim of adding the following along with appropriate tests.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Discrete Module&lt;/li&gt;
+  &lt;li&gt;Transforms Module&lt;/li&gt;
+  &lt;li&gt;Fast Fourier Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;fft&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Number Theoretic Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;ntt&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;Fast Walsh Hadamard Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt; raised an important concern regarding large symbolic expressions while using &lt;code class=&quot;highlighter-rouge&quot;&gt;fft&lt;/code&gt;. &lt;br /&gt;
+&lt;a href=&quot;https://github.com/asmeurer&quot;&gt;Aaron&lt;/a&gt; helped me fix a minor import issue. &lt;br /&gt;
+Successive reviews helped in the following changes to PR:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;using &lt;code class=&quot;highlighter-rouge&quot;&gt;iterable(...)&lt;/code&gt; instead of &lt;code class=&quot;highlighter-rouge&quot;&gt;hasattr(..., '__iter__')&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;adding doctests&lt;/li&gt;
+  &lt;li&gt;improving documentation&lt;/li&gt;
+  &lt;li&gt;fixing precision issues in &lt;code class=&quot;highlighter-rouge&quot;&gt;fft&lt;/code&gt; using argument &lt;code class=&quot;highlighter-rouge&quot;&gt;dps&lt;/code&gt; for decimal places or using unevaluated symbols in the first place (by passing &lt;code class=&quot;highlighter-rouge&quot;&gt;dps=None&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Looking forward to another exciting week.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>GSoC '18 SymPy - Community Bonding</title>
+   <link href="https://sidhantnagpal.github.io/2018/05/gsoc-community-bonding.html"/>
+   <updated>2018-05-16T00:00:00+05:30</updated>
+   <id>https://sidhantnagpal.github.io/2018/05/gsoc-community-bonding</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
+&lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The community bonding period has concluded. As proposed, I have gone through the existing modules and have thought about various aspects of the implementation which needed to be taken care of. The discussion for the project will take place on &lt;code class=&quot;highlighter-rouge&quot;&gt;gitter&lt;/code&gt; under &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy/discrete&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Discussion for API is premature but it will shape as the Coding Period commences. Meanwhile, I have control of what all needs to be done in accordance with the proposed timeline.&lt;/p&gt;
+
+&lt;p&gt;Being familiar with the development workflow and having contributed to SymPy, I assisted new contributors and also helped review existing PRs - &lt;a href=&quot;https://github.com/sympy/sympy/pull/14679&quot;&gt;#14678&lt;/a&gt;, &lt;a href=&quot;https://github.com/sympy/sympy/pull/14698&quot;&gt;#14698&lt;/a&gt; and &lt;a href=&quot;https://github.com/sympy/sympy/pull/14707&quot;&gt;#14707&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to Coding Period.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Selected for GSoC '18</title>
+   <link href="https://sidhantnagpal.github.io/2018/04/gsoc-selection.html"/>
+   <updated>2018-04-24T00:00:00+05:30</updated>
+   <id>https://sidhantnagpal.github.io/2018/04/gsoc-selection</id>
+   <content type="html">&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
+&lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am extremely glad to inform that my &lt;a href=&quot;https://summerofcode.withgoogle.com/dashboard/project/5222530349006848/overview&quot;&gt;proposal&lt;/a&gt; ‘Transforms, Convolution &amp;amp; Linear Recurrence Evaluation’ has been accepted by SymPy for Google Summer of Code 2018.&lt;/p&gt;
+
+&lt;p&gt;For the unitiated, SymPy is a Computer Algebra System (CAS) written entirely in Python. SymPy was started as a project by Ondrej Certik (&lt;a href=&quot;https://github.com/certik&quot;&gt;certik&lt;/a&gt;) in 2006. SymPy has participated in every Google Summer of Code since 2007.&lt;/p&gt;
+
+&lt;p&gt;My official mentors are Aaron Meurer (&lt;a href=&quot;https://github.com/asmeurer&quot;&gt;asmeurer&lt;/a&gt;) and Kalevi Suominen (&lt;a href=&quot;https://github.com/jksuom&quot;&gt;jksuom&lt;/a&gt;). Aaron Meurer (who also joined from GSoC) is the lead developer of SymPy since 2011. Kalevi Suominen (SymPy Member) has mentored for Google Summer of Code in 2016 and 2017. I am extremely lucky to have gotten an opportunity to work with such experienced developers.&lt;/p&gt;
+
+&lt;p&gt;During the Community Bonding Period, I will complete the following tasks:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Setting up the blog with RSS feed for GSoC posts (for &lt;a href=&quot;http://planet.sympy.org&quot;&gt;planet.sympy.org&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;Discussing the possible modes of communication, and getting information for timings and weekly meetings.&lt;/li&gt;
+  &lt;li&gt;Resolving any other issues that might arise during the Coding Period.&lt;/li&gt;
+  &lt;li&gt;Getting the details for expected work to be done, discussing the API of the modules to be implemented and studying the existing modules which might be used.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I would like to thank the SymPy team, especially my mentors - Aaron Meurer and Kalevi Suominen.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to a great summer.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
