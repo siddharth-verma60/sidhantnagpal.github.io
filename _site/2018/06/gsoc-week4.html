@@ -72,7 +72,7 @@
 
 <p>Starting this week, I worked on PR <a href="https://github.com/sympy/sympy/pull/14745">#14765</a> for implementing Fast Walsh Hadamard Transform (<code class="highlighter-rouge">fwht</code>).</p>
 
-<p>As pointed out by <a href="https://github.com/jksuom">Kalevi</a>, symbolic coefficients could be supported by this transform as the general Kronecker matrix only contains <code class="highlighter-rouge">+/-1</code>, which means it essentialy requires only addition or subtraction to perform the transformation. Also, the PR review also helped fix a minor issue regarding string concatenation.</p>
+<p>As pointed out by <a href="https://github.com/jksuom">Kalevi</a>, symbolic coefficients could be supported by this transform as the general Kronecker matrix only contains <code class="highlighter-rouge">+/-1</code>, which means it essentialy requires only addition or subtraction to perform the transformation. Also, the PR review helped fix a minor issue related to string concatenation.</p>
 
 <p>Usage for <code class="highlighter-rouge">fwht</code> looks like:</p>
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">fwht</span><span class="p">,</span> <span class="n">ifwht</span><span class="p">,</span> <span class="n">symbols</span>

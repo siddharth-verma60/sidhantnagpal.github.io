@@ -4,7 +4,7 @@
  <title>Sidhant Nagpal</title>
  <link href="https://sidhantnagpal.github.io/" rel="self"/>
  <link href="https://sidhantnagpal.github.io"/>
- <updated>2018-06-12T17:57:06+05:30</updated>
+ <updated>2018-06-12T17:59:32+05:30</updated>
  <id>https://sidhantnagpal.github.io</id>
  <author>
    <name>Sidhant Nagpal</name>
@@ -24,7 +24,7 @@
 
 &lt;p&gt;Starting this week, I worked on PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14745&quot;&gt;#14765&lt;/a&gt; for implementing Fast Walsh Hadamard Transform (&lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt;).&lt;/p&gt;
 
-&lt;p&gt;As pointed out by &lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt;, symbolic coefficients could be supported by this transform as the general Kronecker matrix only contains &lt;code class=&quot;highlighter-rouge&quot;&gt;+/-1&lt;/code&gt;, which means it essentialy requires only addition or subtraction to perform the transformation. Also, the PR review also helped fix a minor issue regarding string concatenation.&lt;/p&gt;
+&lt;p&gt;As pointed out by &lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt;, symbolic coefficients could be supported by this transform as the general Kronecker matrix only contains &lt;code class=&quot;highlighter-rouge&quot;&gt;+/-1&lt;/code&gt;, which means it essentialy requires only addition or subtraction to perform the transformation. Also, the PR review helped fix a minor issue related to string concatenation.&lt;/p&gt;
 
 &lt;p&gt;Usage for &lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt; looks like:&lt;/p&gt;
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sympy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fwht&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ifwht&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;symbols&lt;/span&gt;
