@@ -6,19 +6,19 @@
 </description>
         <link>https://sidhantnagpal.github.io</link>
         <link>https://sidhantnagpal.github.io</link>
-        <lastBuildDate>2018-06-16T12:03:42+05:30</lastBuildDate>
-        <pubDate>2018-06-16T12:03:42+05:30</pubDate>
+        <lastBuildDate>2018-06-16T12:25:23+05:30</lastBuildDate>
+        <pubDate>2018-06-16T12:25:23+05:30</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>GSoC '18 SymPy - Week 5</title>
+                <title>GSoC'18 SymPy - Week 5</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The first phase of Coding Period has concluded.&lt;/p&gt;
 
-&lt;p&gt;This week, I started working on the convolution for &lt;img src=&quot;https://latex.codecogs.com/gif.latex?2^n&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-group&lt;/code&gt; using &lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt; - Dyadic (XOR) Convolution. The PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14783&quot;&gt;#14783&lt;/a&gt; dealt with this addition to the module.&lt;/p&gt;
+&lt;p&gt;This week, I started working on the convolution for &lt;img src=&quot;http://latex.codecogs.com/svg.latex?\dpi{300}&amp;space;\large&amp;space;2^n&quot; title=&quot;\large 2^n&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-group&lt;/code&gt; using &lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt; - Dyadic (XOR) Convolution. The PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14783&quot;&gt;#14783&lt;/a&gt; dealt with this addition to the module.&lt;/p&gt;
 
 &lt;p&gt;I had a useful discussion with &lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt; for clearing the API and naming convention. &lt;br /&gt;
 The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; method uses &lt;code class=&quot;highlighter-rouge&quot;&gt;dyadic=True&lt;/code&gt; as the hint which uses &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution_fwht&lt;/code&gt; for the implementation. Appropriate documentation, doctests and unit tests are also included.&lt;/p&gt;
@@ -45,7 +45,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
         </item>
 
         <item>
-                <title>GSoC '18 SymPy - Week 4</title>
+                <title>GSoC'18 SymPy - Week 4</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -79,7 +79,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
         </item>
 
         <item>
-                <title>GSoC '18 SymPy - Week 3</title>
+                <title>GSoC'18 SymPy - Week 3</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -97,7 +97,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
         </item>
 
         <item>
-                <title>GSoC '18 SymPy - Week 2</title>
+                <title>GSoC'18 SymPy - Week 2</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -131,7 +131,7 @@ I had a detailed discussion with &lt;a href=&quot;https://github.com/jksuom&quot
         </item>
 
         <item>
-                <title>GSoC '18 SymPy - Week 1</title>
+                <title>GSoC'18 SymPy - Week 1</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -166,7 +166,7 @@ Successive reviews helped in the following changes to PR:&lt;/p&gt;
         </item>
 
         <item>
-                <title>GSoC '18 SymPy - Community Bonding</title>
+                <title>GSoC'18 SymPy - Community Bonding</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 

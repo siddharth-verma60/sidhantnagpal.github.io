@@ -4,7 +4,7 @@
  <title>Sidhant Nagpal</title>
  <link href="https://sidhantnagpal.github.io/" rel="self"/>
  <link href="https://sidhantnagpal.github.io"/>
- <updated>2018-06-16T12:03:42+05:30</updated>
+ <updated>2018-06-16T12:25:23+05:30</updated>
  <id>https://sidhantnagpal.github.io</id>
  <author>
    <name>Sidhant Nagpal</name>
@@ -13,7 +13,7 @@
 
  
  <entry>
-   <title>GSoC '18 SymPy - Week 5</title>
+   <title>GSoC'18 SymPy - Week 5</title>
    <link href="https://sidhantnagpal.github.io/2018/06/gsoc-week5.html"/>
    <updated>2018-06-15T00:00:00+05:30</updated>
    <id>https://sidhantnagpal.github.io/2018/06/gsoc-week5</id>
@@ -22,7 +22,7 @@
 
 &lt;p&gt;The first phase of Coding Period has concluded.&lt;/p&gt;
 
-&lt;p&gt;This week, I started working on the convolution for &lt;img src=&quot;https://latex.codecogs.com/gif.latex?2^n&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-group&lt;/code&gt; using &lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt; - Dyadic (XOR) Convolution. The PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14783&quot;&gt;#14783&lt;/a&gt; dealt with this addition to the module.&lt;/p&gt;
+&lt;p&gt;This week, I started working on the convolution for &lt;img src=&quot;http://latex.codecogs.com/svg.latex?\dpi{300}&amp;space;\large&amp;space;2^n&quot; title=&quot;\large 2^n&quot; /&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;-group&lt;/code&gt; using &lt;code class=&quot;highlighter-rouge&quot;&gt;fwht&lt;/code&gt; - Dyadic (XOR) Convolution. The PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14783&quot;&gt;#14783&lt;/a&gt; dealt with this addition to the module.&lt;/p&gt;
 
 &lt;p&gt;I had a useful discussion with &lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt; for clearing the API and naming convention. &lt;br /&gt;
 The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; method uses &lt;code class=&quot;highlighter-rouge&quot;&gt;dyadic=True&lt;/code&gt; as the hint which uses &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution_fwht&lt;/code&gt; for the implementation. Appropriate documentation, doctests and unit tests are also included.&lt;/p&gt;
@@ -46,7 +46,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
  </entry>
  
  <entry>
-   <title>GSoC '18 SymPy - Week 4</title>
+   <title>GSoC'18 SymPy - Week 4</title>
    <link href="https://sidhantnagpal.github.io/2018/06/gsoc-week4.html"/>
    <updated>2018-06-09T00:00:00+05:30</updated>
    <id>https://sidhantnagpal.github.io/2018/06/gsoc-week4</id>
@@ -80,7 +80,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
  </entry>
  
  <entry>
-   <title>GSoC '18 SymPy - Week 3</title>
+   <title>GSoC'18 SymPy - Week 3</title>
    <link href="https://sidhantnagpal.github.io/2018/06/gsoc-week3.html"/>
    <updated>2018-06-03T00:00:00+05:30</updated>
    <id>https://sidhantnagpal.github.io/2018/06/gsoc-week3</id>
@@ -98,7 +98,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
  </entry>
  
  <entry>
-   <title>GSoC '18 SymPy - Week 2</title>
+   <title>GSoC'18 SymPy - Week 2</title>
    <link href="https://sidhantnagpal.github.io/2018/05/gsoc-week2.html"/>
    <updated>2018-05-29T00:00:00+05:30</updated>
    <id>https://sidhantnagpal.github.io/2018/05/gsoc-week2</id>
@@ -132,7 +132,7 @@ I had a detailed discussion with &lt;a href=&quot;https://github.com/jksuom&quot
  </entry>
  
  <entry>
-   <title>GSoC '18 SymPy - Week 1</title>
+   <title>GSoC'18 SymPy - Week 1</title>
    <link href="https://sidhantnagpal.github.io/2018/05/gsoc-week1.html"/>
    <updated>2018-05-23T00:00:00+05:30</updated>
    <id>https://sidhantnagpal.github.io/2018/05/gsoc-week1</id>
@@ -167,7 +167,7 @@ Successive reviews helped in the following changes to PR:&lt;/p&gt;
  </entry>
  
  <entry>
-   <title>GSoC '18 SymPy - Community Bonding</title>
+   <title>GSoC'18 SymPy - Community Bonding</title>
    <link href="https://sidhantnagpal.github.io/2018/05/gsoc-community-bonding.html"/>
    <updated>2018-05-16T00:00:00+05:30</updated>
    <id>https://sidhantnagpal.github.io/2018/05/gsoc-community-bonding</id>
