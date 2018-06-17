@@ -3,8 +3,8 @@
 <channel>
         <title>Sidhant Nagpal - GSoC</title>
         <description>Tag: GSoC</description>
-        <lastBuildDate>2018-06-16T12:25:23+05:30</lastBuildDate>
-        <pubDate>2018-06-16T12:25:23+05:30</pubDate>
+        <lastBuildDate>2018-06-17T14:34:11+05:30</lastBuildDate>
+        <pubDate>2018-06-17T14:34:11+05:30</pubDate>
         <ttl>1800</ttl>
 
 
@@ -20,7 +20,7 @@
 &lt;p&gt;I had a useful discussion with &lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt; for clearing the API and naming convention. &lt;br /&gt;
 The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; method uses &lt;code class=&quot;highlighter-rouge&quot;&gt;dyadic=True&lt;/code&gt; as the hint which uses &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution_fwht&lt;/code&gt; for the implementation. Appropriate documentation, doctests and unit tests are also included.&lt;/p&gt;
 
-&lt;p&gt;Successive reviews helped in refining the PR, before the final merge later this week.&lt;/p&gt;
+&lt;p&gt;Successive reviews helped in refining the PR, before the final merge later in the week.&lt;/p&gt;
 
 &lt;p&gt;The usage for the same is:&lt;/p&gt;
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sympy.discrete.convolution&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;convolution&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;convolution_fwht&lt;/span&gt;
@@ -32,7 +32,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
 &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Plan for the first phase has executed according to the timeline, and Evaluation I has been successful.&lt;/p&gt;
+&lt;p&gt;Plan for this phase has executed according to the timeline, and the first evaluation has been successful.&lt;/p&gt;
 
 &lt;p&gt;Looking forward to the next phase of Coding Period.&lt;/p&gt;
 </description>
