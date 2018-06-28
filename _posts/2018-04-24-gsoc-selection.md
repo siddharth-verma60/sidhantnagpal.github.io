@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Selected for GSoC '18"
+title: "Selected for GSoC at SymPy"
 summary: "SymPy - Transforms, Convolution & Linear Recurrence Evaluation"
 comments: true
 category:

@@ -9,6 +9,7 @@ https://sidhantnagpal.github.io/rss.xml
 https://sidhantnagpal.github.io/sitemap.txt
 https://sidhantnagpal.github.io/tags
 
+https://sidhantnagpal.github.io/2018/06/gsoc-week6and7.html
 https://sidhantnagpal.github.io/2018/06/gsoc-week5.html
 https://sidhantnagpal.github.io/2018/06/gsoc-week4.html
 https://sidhantnagpal.github.io/2018/06/gsoc-week3.html

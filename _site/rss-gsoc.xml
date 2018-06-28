@@ -3,13 +3,49 @@
 <channel>
         <title>Sidhant Nagpal - GSoC</title>
         <description>Tag: GSoC</description>
-        <lastBuildDate>2018-06-17T14:34:11+05:30</lastBuildDate>
-        <pubDate>2018-06-17T14:34:11+05:30</pubDate>
+        <lastBuildDate>2018-06-28T22:16:32+05:30</lastBuildDate>
+        <pubDate>2018-06-28T22:16:32+05:30</pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>GSoC'18 SymPy - Week 5</title>
+                <title>GSoC: SymPy - Week 6 & 7</title>
+                <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
+&lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The second phase of Coding Period has started.&lt;/p&gt;
+
+&lt;p&gt;I started this phase working on &lt;code class=&quot;highlighter-rouge&quot;&gt;sympy.discrete.recurrence&lt;/code&gt; module. After having an initial discussion with &lt;a href=&quot;https://github.com/jksuom&quot;&gt;Kalevi&lt;/a&gt; regarding the functionality to be implemented, I did the proof-of-concept for the same on a remote branch.&lt;/p&gt;
+
+&lt;p&gt;After the approach was finalized, the implementation was polished before opening the PR. The PR &lt;a href=&quot;https://github.com/sympy/sympy/pull/14816&quot;&gt;#14816&lt;/a&gt; also included documentation, doctests, and unit tests for the module.&lt;/p&gt;
+
+&lt;p&gt;The method &lt;code class=&quot;highlighter-rouge&quot;&gt;linrec(coeffs, init, n)&lt;/code&gt; takes coefficients, initial values and point of evaluation for the linear recurrence. Usage for a recurrence like &lt;code class=&quot;highlighter-rouge&quot;&gt;f(n) = f(n - 7) + f(n - 13) + f(n - 17)&lt;/code&gt; (having order &lt;code class=&quot;highlighter-rouge&quot;&gt;17&lt;/code&gt;) would be:&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coeffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coeffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coeffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;coeffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linrec&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;coeffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]:&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;         &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;     &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;40&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;41&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;As suggested by &lt;a href=&quot;https://github.com/asmeurer&quot;&gt;Aaron&lt;/a&gt;, it will be good to have a user-facing method that calls &lt;code class=&quot;highlighter-rouge&quot;&gt;linrec&lt;/code&gt; internally for performing the computation.&lt;/p&gt;
+
+&lt;p&gt;Looking forward to another exciting week.&lt;/p&gt;
+</description>
+                <link>https://sidhantnagpal.github.io/2018/06/gsoc-week6and7.html</link>
+                <guid>https://sidhantnagpal.github.io/2018/06/gsoc-week6and7</guid>
+                <pubDate>2018-06-28T00:00:00+05:30</pubDate>
+        </item>
+
+        <item>
+                <title>GSoC: SymPy - Week 5</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -42,7 +78,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
         </item>
 
         <item>
-                <title>GSoC'18 SymPy - Week 4</title>
+                <title>GSoC: SymPy - Week 4</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -76,7 +112,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
         </item>
 
         <item>
-                <title>GSoC'18 SymPy - Week 3</title>
+                <title>GSoC: SymPy - Week 3</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -94,7 +130,7 @@ The &lt;code class=&quot;highlighter-rouge&quot;&gt;convolution&lt;/code&gt; met
         </item>
 
         <item>
-                <title>GSoC'18 SymPy - Week 2</title>
+                <title>GSoC: SymPy - Week 2</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -128,7 +164,7 @@ I had a detailed discussion with &lt;a href=&quot;https://github.com/jksuom&quot
         </item>
 
         <item>
-                <title>GSoC'18 SymPy - Week 1</title>
+                <title>GSoC: SymPy - Week 1</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -163,7 +199,7 @@ Successive reviews helped in the following changes to PR:&lt;/p&gt;
         </item>
 
         <item>
-                <title>GSoC'18 SymPy - Community Bonding</title>
+                <title>GSoC: SymPy - Community Bonding</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
@@ -181,7 +217,7 @@ Successive reviews helped in the following changes to PR:&lt;/p&gt;
         </item>
 
         <item>
-                <title>Selected for GSoC '18</title>
+                <title>Selected for GSoC at SymPy</title>
                 <description>&lt;p&gt;&lt;img src=&quot;/files/gsoc-sympy.png&quot; style=&quot;width:80%; height:80%; float:left; margin-left:50px;&quot; /&gt;
 &lt;br clear=&quot;all&quot; /&gt;&lt;/p&gt;
 
