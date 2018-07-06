@@ -6,7 +6,7 @@
     <meta charset="utf-8">
 
     
-    <title>Sidhant Nagpal | GSoC: SymPy - Week 5</title>
+    <title>Sidhant Nagpal | GSoC: SymPy - Week 8</title>
     
 
     
@@ -59,7 +59,7 @@
         
 
 <div class="page-header">
-  <h1>GSoC: SymPy - Week 5 </h1>
+  <h1>GSoC: SymPy - Week 8 </h1>
 </div>
 
 <div class="row-fluid post-full">
@@ -68,33 +68,29 @@
       <p><img src="/files/gsoc-sympy.png" style="width:80%; height:80%; float:left; margin-left:50px;" />
 <br clear="all" /></p>
 
-<p>The first phase of Coding Period has concluded.</p>
+<p>This week I started working on adding Möbius Transform to the <code class="highlighter-rouge">discrete</code> module using Yate’s DP (Dynamic Programming) method for implementation as part of PR <a href="https://github.com/sympy/sympy/pull/14853">#14853</a>. The proposed transforms are part of <code class="highlighter-rouge">sympy.discrete.transforms</code> module.</p>
 
-<p>This week, I started working on the convolution for <img src="http://latex.codecogs.com/svg.latex?\dpi{300}&space;\large&space;2^n" title="\large 2^n" /><code class="highlighter-rouge">-group</code> using <code class="highlighter-rouge">fwht</code> - Dyadic (XOR) Convolution. The PR <a href="https://github.com/sympy/sympy/pull/14783">#14783</a> dealt with this addition to the module.</p>
-
-<p>I had a useful discussion with <a href="https://github.com/jksuom">Kalevi</a> for clearing the API and naming convention. <br />
-The <code class="highlighter-rouge">convolution</code> method uses <code class="highlighter-rouge">dyadic=True</code> as the hint which uses <code class="highlighter-rouge">convolution_fwht</code> for the implementation. Appropriate documentation, doctests and unit tests are also included.</p>
-
-<p>Successive reviews helped in refining the PR, before the final merge later in the week.</p>
-
-<p>The usage for the same is:</p>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">sympy.discrete.convolution</span> <span class="kn">import</span> <span class="n">convolution</span><span class="p">,</span> <span class="n">convolution_fwht</span>
-
-<span class="o">&gt;&gt;&gt;</span> <span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s">'u v x y'</span><span class="p">)</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">convolution</span><span class="p">([</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">],</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">],</span> <span class="n">dyadic</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="p">[</span><span class="n">u</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">v</span><span class="o">*</span><span class="n">y</span><span class="p">,</span> <span class="n">u</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">v</span><span class="o">*</span><span class="n">x</span><span class="p">]</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">convolution_fwht</span><span class="p">([</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">],</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">])</span> <span class="o">==</span> <span class="n">_</span>
-<span class="bp">True</span>
+<p>After discussing with <a href="https://github.com/jksuom">Kalevi</a>, the methods implementing this transform were added with appropriate names. The keyword <code class="highlighter-rouge">subset</code> is used as a boolean to choose whether enumeration is done over subsets or supersets. The usage for the transform is:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">mobius_transform</span><span class="p">,</span> <span class="n">inverse_mobius_transform</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">seq</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">symbols</span><span class="p">(</span><span class="s">'w x y z'</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mobius_transform</span><span class="p">(</span><span class="n">seq</span><span class="p">)</span>
+<span class="p">[</span><span class="n">w</span><span class="p">,</span> <span class="n">w</span> <span class="o">+</span> <span class="n">x</span><span class="p">,</span> <span class="n">w</span> <span class="o">+</span> <span class="n">y</span><span class="p">,</span> <span class="n">w</span> <span class="o">+</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">inverse_mobius_transform</span><span class="p">(</span><span class="n">_</span><span class="p">)</span>
+<span class="p">[</span><span class="n">w</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">inverse_mobius_transform</span><span class="p">(</span><span class="n">seq</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="p">[</span><span class="n">w</span> <span class="o">-</span> <span class="n">x</span> <span class="o">-</span> <span class="n">y</span> <span class="o">+</span> <span class="n">z</span><span class="p">,</span> <span class="n">x</span> <span class="o">-</span> <span class="n">z</span><span class="p">,</span> <span class="n">y</span> <span class="o">-</span> <span class="n">z</span><span class="p">,</span> <span class="n">z</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">mobius_transform</span><span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">subset</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="p">[</span><span class="n">w</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">]</span>
 </code></pre></div></div>
 
-<p>Plan for this phase has executed according to the timeline, and the first evaluation has been successful.</p>
+<p>The PR was merged successfully, after inclusion of docstring and unit tests for the transform.</p>
 
-<p>Looking forward to the next phase of Coding Period.</p>
+<p>Looking forward to another exciting week.</p>
 
     </div>
 
     <div class="date">
-      <span><b>Published: </b>15 June 2018</span>
+      <span><b>Published: </b>06 July 2018</span>
     </div>
 
   
@@ -122,11 +118,11 @@ The <code class="highlighter-rouge">convolution</code> method uses <code class="
     <div class="pagination">
       <ul>
       
-        <li class="prev"><a href="/2018/06/gsoc-week4.html" title="GSoC: SymPy - Week 4">&larr; Previous</a></li>
+        <li class="prev"><a href="/2018/06/gsoc-week6and7.html" title="GSoC: SymPy - Week 6 & 7">&larr; Previous</a></li>
       
         <li class="archive"><a href="/archive.html">Archive</a></li>
       
-        <li class="next"><a href="/2018/06/gsoc-week6and7.html" title="GSoC: SymPy - Week 6 & 7">Next &rarr;</a></li>
+        <li class="disabled">Next &rarr;</li>
       
       </ul>
     </div>
