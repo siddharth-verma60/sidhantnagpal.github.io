@@ -48,8 +48,8 @@ body {
 .nav_link {
     text-decoration: none;
     color: #ddd;
-    font-size: 1.1em;
-    padding: 0.35em;
+    font-size: 1.25em;
+    padding: 0.4em;
     /*font-weight: bold;*/
     font-family: Calibri, Arial, Helvetica, sans-serif;
 }
