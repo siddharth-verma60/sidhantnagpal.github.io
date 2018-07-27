@@ -14,11 +14,12 @@ tags:
 
 The second phase of Coding Period has started.
 
-I started this phase working on `sympy.discrete.recurrence` module. After having an initial discussion with [Kalevi](https://github.com/jksuom) regarding the functionality to be implemented, I did the proof-of-concept for the same on a remote branch.
+I started this phase working on recurrence submodule under `discrete`. After having an initial discussion with [Kalevi](https://github.com/jksuom) regarding the functionality to be implemented, I did the proof-of-concept for the same on a remote branch.
 
 After the approach was finalized, the implementation was polished before opening the PR. The PR [#14816](https://github.com/sympy/sympy/pull/14816) also included documentation, doctests, and unit tests for the module.
 
 The method `linrec(coeffs, init, n)` takes coefficients, initial values and point of evaluation for the linear recurrence. Usage for a recurrence like `f(n) = f(n - 7) + f(n - 13) + f(n - 17)` (having order `17`) would be:
+
 ```python
 In []: coeffs, init = [0]*17, [1]*17
 In []: coeffs[7 - 1] = coeffs[13 - 1] = coeffs[17 - 1] = 1
