@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GSoC: SymPy - Week 11"
+title: "Concluding GSoC: SymPy"
 summary: "SymPy - Transforms, Convolution & Linear Recurrence Evaluation"
 comments: true
 category:
@@ -12,7 +12,7 @@ tags:
 <img src="/files/gsoc-sympy.png" style="width:80%; height:80%; float:left; margin-left:50px;" />
 <br clear="all" />
 
-Another week of Coding Period has concluded.
+The final week of Coding Period has concluded.
 
 I started the week by finalizing the PR [#14725](https://github.com/sympy/sympy/pull/14725). The PR has been merged successfully. Fast Walsh Hadamard Transform (`fwht`) will be added along with XOR Convolution at a later point of time.
 
@@ -29,5 +29,3 @@ Successive reviews helped in the following changes to PR:
 - usage of `**hints` argument in `convolution` for flexibility of the API
 - handling empty list `[]` cases
 - defaulting `cycle=0` as normal convolution
-
-Looking forward to another exciting week.
