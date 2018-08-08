@@ -10,27 +10,34 @@
 
     <div class="date">
       <span><b>Published: </b>{{ page.date | date_to_long_string }}</span>
+      <span style="float:right">{% include JB/sharing %}</span>
+      <!-- <li class="inline"><b>Published: </b>{{ page.date | date_to_long_string }}</li> -->
     </div>
-
-  {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li class="inline"><b>Categories: </b></li>
-      {% assign categories_list = page.categories %}
-      {% include JB/categories_list %}
-    </ul>
     <br>
-  {% endunless %}
 
-  {% unless page.tags == empty %}
-    <ul class="tag_box inline">
-      <li class="inline"><b>Tags: </b></li>
-      {% assign tags_list = page.tags %}
-      {% include JB/tags_list %}
-    </ul>
-  {% endunless %}
+    {% unless page.categories == empty %}
+      <ul class="tag_box inline">
+        <li class="inline"><b>Categories: </b></li>
+        {% assign categories_list = page.categories %}
+        {% include JB/categories_list %}
+      </ul>
+      <br>
+    {% endunless %}
+
+    {% unless page.tags == empty %}
+      <div>
+        <img src="/files/sidhant.jpg"
+  style="float:left; margin:0px 15px 0px 0px; width:90px; background:#777; border-radius:50%; border:1px solid #333;"/>
+        <span class="tag_box inline" style="float:right"><b>Tags: </b>
+          {% assign tags_list = page.tags %}
+          {% include JB/tags_list %}
+        </span>
+        <span>{% include JB/custom/profile %}</span>
+      </div>
+    {% endunless %}
 
     <div class="pagination">
-      <ul>
+      <ul style="float:right">
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
       {% else %}
@@ -44,6 +51,7 @@
       {% endif %}
       </ul>
     </div>
+
     {% include JB/comments %}
     <br />
   </div>

@@ -1,0 +1,20 @@
+<!-- Twitter -->
+<a href="https://twitter.com/share" class="twitter-share-button" data-text="{{ page.title }}" data-via="{{ site.JB.sharing.twitter.via }}" data-related="{{ site.author.twitter }}" data-count="{{ site.JB.sharing.twitter.count }}" data-size="{{ site.JB.sharing.twitter.size }}">Tweet</a>
+
+<!-- LinkedIn -->
+<!-- <script type="IN/Share" data-counter="{{ site.JB.sharing.linkedin.counter }}"></script> -->
+<script type="IN/Share"></script>
+
+<!-- Google+ -->
+<a class="g-plusone" data-size="{{ site.JB.sharing.googleplus.size }}" data-annotation="{{ site.JB.sharing.googleplus.annotation }}" data-width="{{ site.JB.sharing.googleplus.width }}"></a>
+
+
+<!-- LinkedIn -->
+<script src="//platform.linkedin.com/in.js" type="text/javascript" async defer></script>
+<!-- GitHub -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<!-- Google+ -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://apis.google.com/js/plusone.js" async defer></script>
+<!-- Twitter -->
+<script async defer src="https://platform.twitter.com/widgets.js"></script>
