@@ -9,7 +9,7 @@ tags:
 - sympy
 ---
 
-<img src="/files/gsoc-sympy.png" style="width:80%; height:80%; float:left; margin-left:50px;" />
+<img src="/files/gsoc-sympy.png" style="width:75%; height:75%; float:left; margin-left:60px;" />
 <br clear="all" />
 
 The second phase of Coding Period has started.
