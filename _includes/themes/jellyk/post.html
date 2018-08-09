@@ -8,19 +8,22 @@
       {{ content }}
     </div>
 
-    <div class="date">
+    <!-- Social Share Buttons -->
+    <div>
       <span style="float:right">{% include JB/sharing %}</span>
+    </div>
+
+    <div class="date">
       <span><b>Published: </b>{{ page.date | date_to_long_string }}</span>
       <!-- <li class="inline"><b>Published: </b>{{ page.date | date_to_long_string }}</li> -->
     </div>
     <br>
 
     {% unless page.categories == empty %}
-      <ul class="tag_box inline">
-        <li class="inline"><b>Categories: </b></li>
+      <div class="tag_box inline"><b>Categories: </b>
         {% assign categories_list = page.categories %}
         {% include JB/categories_list %}
-      </ul>
+      </div>
       <br>
     {% endunless %}
 
@@ -31,6 +34,7 @@
       </div>
     {% endunless %}
 
+    <!-- Social Profiles -->
     <div>
       <img src="/files/sidhant.jpg"
 style="float:left; margin:25px 15px 0px 0px; width:90px; background:#777; border-radius:50%; border:1px solid #333;"/>
