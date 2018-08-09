@@ -7,6 +7,8 @@ group: navigation
 <h2>Blog Posts:</h2>
 <ul class="home" style="list-style:none;">
 {% for post in site.posts %}
-  <li><h3 style="font-weight:normal;">{{ post.date | date_to_string }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3></li>
+  <li>
+  		<h3 style="font-weight:normal;">{{ post.date | date_to_string }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+  </li>
 {% endfor %}
 </ul>

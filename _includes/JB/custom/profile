@@ -1,14 +1,15 @@
 <div>
+<a class="github-button" href="https://github.com/sidhantnagpal" data-show-count="true" data-size="large" aria-label="Follow @sidhantnagpal on GitHub">Follow</a>
+<!-- <a class="github-button" href="https://github.com/sidhantnagpal" data-show-count="false" data-size="large" aria-label="Follow @sidhantnagpal on GitHub">Follow</a> -->
+</div>
+
+<div>
 	<a class="twitter-follow-button" href="https://twitter.com/_SidhantNagpal" data-show-count="true" data-show-screen-name="false" data-size="large"></a>
-	<!-- <a class="twitter-follow-button" href="https://twitter.com/_SidhantNagpal" data-show-count="false" data-show-screen-name="false" data-size="large"></a> -->
+<!-- <a class="twitter-follow-button" href="https://twitter.com/_SidhantNagpal" data-show-count="false" data-show-screen-name="false" data-size="large"></a> -->
 </div>
 
-<div>
-	<a class="github-button" href="https://github.com/sidhantnagpal" data-show-count="true" data-size="large" aria-label="Follow @sidhantnagpal on GitHub">Follow</a>
-	<!-- <a class="github-button" href="https://github.com/sidhantnagpal" data-show-count="false" data-size="large" aria-label="Follow @sidhantnagpal on GitHub">Follow</a> -->
-</div>
 
 <div>
-	<a class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/113661391903214676318" data-rel="author"></a>
-	<!-- <a class="g-follow" data-annotation="none" data-height="24" data-href="//plus.google.com/u/0/113661391903214676318" data-rel="author"></a> -->
+<a class="g-follow" data-annotation="bubble" data-height="24" data-href="//plus.google.com/u/0/113661391903214676318" data-rel="author"></a>
+<!-- <a class="g-follow" data-annotation="none" data-height="24" data-href="//plus.google.com/u/0/113661391903214676318" data-rel="author"></a> -->
 </div>
