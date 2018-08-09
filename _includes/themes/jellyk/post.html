@@ -8,23 +8,28 @@
       {{ content }}
     </div>
 
+    <div class="date">
+      <span><b>Published: </b>{{ page.date | date_to_long_string }}</span>
+      <!-- <li class="inline"><b>Published: </b>{{ page.date | date_to_long_string }}</li> -->
+    </div>
+
     <!-- Social Share Buttons -->
     <div>
       <span style="float:right">{% include JB/sharing %}</span>
     </div>
 
-    <div class="date">
-      <span><b>Published: </b>{{ page.date | date_to_long_string }}</span>
-      <!-- <li class="inline"><b>Published: </b>{{ page.date | date_to_long_string }}</li> -->
+    <!-- Social Profiles -->
+    <div>
+      <img src="/files/sidhant.jpg"
+style="float:left; margin:25px 15px 0px 0px; width:90px; background:#777; border-radius:50%; border:1px solid #333;"/>
+      <span style="margin:0px 0px 0px 25px">{% include JB/custom/profile %}</span>
     </div>
-    <br>
 
     {% unless page.categories == empty %}
-      <div class="tag_box inline"><b>Categories: </b>
+      <div class="tag_box inline" style="float:right"><b>Categories: </b>
         {% assign categories_list = page.categories %}
         {% include JB/categories_list %}
       </div>
-      <br>
     {% endunless %}
 
     {% unless page.tags == empty %}
@@ -34,15 +39,9 @@
       </div>
     {% endunless %}
 
-    <!-- Social Profiles -->
-    <div>
-      <img src="/files/sidhant.jpg"
-style="float:left; margin:25px 15px 0px 0px; width:90px; background:#777; border-radius:50%; border:1px solid #333;"/>
-      <span style="margin:0px 0px 0px 25px">{% include JB/custom/profile %}</span>
-    </div>
 
-    <div class="pagination">
-      <ul style="float:right">
+    <div class="pagination" style="float:left">
+      <div>
       {% if page.previous %}
         <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
       {% else %}
@@ -54,7 +53,7 @@ style="float:left; margin:25px 15px 0px 0px; width:90px; background:#777; border
       {% else %}
         <li class="disabled">Next &rarr;</li>
       {% endif %}
-      </ul>
+      </div>
     </div>
 
     {% include JB/comments %}
