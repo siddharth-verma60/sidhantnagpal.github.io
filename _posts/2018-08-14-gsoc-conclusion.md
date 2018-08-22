@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Concluding GSoC: SymPy"
+title: "Concluding GSoC 2018: SymPy"
 summary: "SymPy - Transforms, Convolution & Linear Recurrence Evaluation"
 comments: true
 category:

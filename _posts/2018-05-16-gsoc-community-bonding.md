@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GSoC: SymPy - Community Bonding"
+title: "GSoC 2018: SymPy - Community Bonding"
 summary: "SymPy - Transforms, Convolution & Linear Recurrence Evaluation"
 comments: true
 category:

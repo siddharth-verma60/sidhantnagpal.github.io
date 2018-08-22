@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GSoC: SymPy - Week 6 & 7"
+title: "GSoC 2018: SymPy - Week 6 & 7"
 summary: "SymPy - Transforms, Convolution & Linear Recurrence Evaluation"
 comments: true
 category:

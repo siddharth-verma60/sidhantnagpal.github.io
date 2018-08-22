@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Selected for GSoC: SymPy"
+title: "Selected for GSoC 2018: SymPy"
 summary: "SymPy - Transforms, Convolution & Linear Recurrence Evaluation"
 comments: true
 category:
@@ -16,7 +16,7 @@ I am extremely glad to inform that my [proposal](https://summerofcode.withgoogle
 
 For the unitiated, SymPy is a Computer Algebra System (CAS) written entirely in Python. SymPy was started as a project by Ondrej Certik ([certik](https://github.com/certik)) in 2006. SymPy has participated in every Google Summer of Code since 2007.
 
-My official mentors are Aaron Meurer ([asmeurer](https://github.com/asmeurer)) and Kalevi Suominen ([jksuom](https://github.com/jksuom)). Aaron Meurer (who also joined from GSoC) is the lead developer of SymPy since 2011. Kalevi Suominen (SymPy Member) has mentored for Google Summer of Code in 2016 and 2017. I am extremely lucky to have gotten an opportunity to work with such experienced developers.
+My official mentors are Aaron Meurer ([asmeurer](https://github.com/asmeurer)) and Kalevi Suominen ([jksuom](https://github.com/jksuom)). Aaron (who also joined from GSoC) is the lead developer of SymPy since 2011. Kalevi (SymPy Member) has mentored for Google Summer of Code in 2016 and 2017. I am extremely lucky to have gotten an opportunity to work with such experienced developers.
 
 During the Community Bonding Period, I will complete the following tasks:
 1. Setting up the blog with RSS feed for GSoC posts (for [planet.sympy.org](http://planet.sympy.org)).
