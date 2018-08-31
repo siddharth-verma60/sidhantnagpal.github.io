@@ -12,7 +12,7 @@ tags:
 <img src="/files/gsoc-sympy.png" style="width:75%; height:75%; float:left; margin-left:55px;" />
 <br clear="all" />
 
-I am extremely glad to inform that my [proposal](https://summerofcode.withgoogle.com/dashboard/project/5222530349006848/overview) 'Transforms, Convolution & Linear Recurrence Evaluation' has been accepted by SymPy for Google Summer of Code 2018.
+I am extremely glad to inform that my [proposal](https://summerofcode.withgoogle.com/projects/5222530349006848) 'Transforms, Convolution & Linear Recurrence Evaluation' has been accepted by SymPy for Google Summer of Code 2018.
 
 For the unitiated, SymPy is a Computer Algebra System (CAS) written entirely in Python. SymPy was started as a project by Ondrej Certik ([certik](https://github.com/certik)) in 2006. SymPy has participated in every Google Summer of Code since 2007.
 
