@@ -16,6 +16,6 @@ The community bonding period has concluded. As proposed, I have gone through the
 
 Discussion for API is premature but it will shape as the Coding Period commences. Meanwhile, I have control of what all needs to be done in accordance with the proposed timeline.
 
-Being familiar with the development workflow and having contributed to SymPy, I assisted new contributors and also helped review existing PRs - [#14678](https://github.com/sympy/sympy/pull/14679), [#14698](https://github.com/sympy/sympy/pull/14698) and [#14707](https://github.com/sympy/sympy/pull/14707).
+Being familiar with the development workflow and having contributed to SymPy, I assisted new contributors and also helped review existing PRs - [#14679](https://github.com/sympy/sympy/pull/14679), [#14698](https://github.com/sympy/sympy/pull/14698) and [#14707](https://github.com/sympy/sympy/pull/14707).
 
 Looking forward to Coding Period.
