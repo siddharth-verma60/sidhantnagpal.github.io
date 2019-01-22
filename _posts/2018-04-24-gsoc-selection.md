@@ -14,7 +14,7 @@ tags:
 
 I am extremely glad to inform that my [proposal](https://summerofcode.withgoogle.com/projects/5222530349006848) 'Transforms, Convolution & Linear Recurrence Evaluation' has been accepted by SymPy for Google Summer of Code 2018.
 <!-- https://summerofcode.withgoogle.com/dashboard/project/5222530349006848/overview -->
-For the unitiated, SymPy is a Computer Algebra System (CAS) written entirely in Python. SymPy was started as a project by Ondrej Certik ([certik](https://github.com/certik)) in 2006. SymPy has participated in every Google Summer of Code since 2007.
+For those unfamiliar, SymPy is a Computer Algebra System (CAS) written entirely in Python. SymPy was started as a project by Ondrej Certik ([certik](https://github.com/certik)) in 2006. SymPy has participated in every Google Summer of Code since 2007.
 
 My official mentors are Aaron Meurer ([asmeurer](https://github.com/asmeurer)) and Kalevi Suominen ([jksuom](https://github.com/jksuom)). Aaron (who also joined from GSoC) is the lead developer of SymPy since 2011. Kalevi (SymPy Member) has mentored for Google Summer of Code in 2016 and 2017. I am extremely lucky to have gotten an opportunity to work with such experienced developers.
 
