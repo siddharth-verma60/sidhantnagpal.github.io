@@ -12,13 +12,13 @@ markdown: kramdown
 #
 title : Sidhant Nagpal
 # tagline: Blog
-email: sidhantnagpal [dot] is [at] gmail [dot] com
+email: sidhantng [at] gmail
 description: >
   Hi, I am Sidhant Nagpal. Welcome to my blog.
 baseurl: ""
 author :
   name : Sidhant Nagpal
-  email : sidhantnagpal.is@gmail.com
+  email : sidhantng@gmail.com
   github : sidhantnagpal
   linkedin : sidhantnagpal
   twitter: sidhant_n
