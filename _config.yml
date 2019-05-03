@@ -12,16 +12,16 @@ markdown: kramdown
 #
 title : Sidhant Nagpal
 # tagline: Blog
-email: sidhantng [at] gmail
+email: sidhantnagp [at] gmail
 description: >
   Hi, I am Sidhant Nagpal. Welcome to my blog.
 baseurl: ""
 author :
   name : Sidhant Nagpal
-  email : sidhantng@gmail.com
+  email : sidhantnagp@gmail.com
   github : sidhantnagpal
   linkedin : sidhantnagpal
-  twitter: sidhant_n
+  twitter: sidhantnagp
   # feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
