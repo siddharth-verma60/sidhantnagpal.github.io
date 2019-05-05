@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: sidhantnagpal.com
+Token: ece7d65a89e916971f7a5b252841e324987b2d73b55899c2729a928c594e726d
