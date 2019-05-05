@@ -84,6 +84,7 @@ JB :
   atom_path : /atom.xml
   rss_path : /rss.xml
   resume_path : /resume.pdf
+  brave_token_path : /.well-known/brave-rewards-verification.txt
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
