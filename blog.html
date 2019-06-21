@@ -8,7 +8,12 @@ group: navigation
 <li class="home" style="list-style:none">
 {% for post in site.posts %}
   <div style="margin-left:20px">
-  	<h3 style="font-weight:normal">{{ post.date | date_to_string }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
+  	<h2 style="font-weight:normal; font-size: 150%">{{ post.date | date_to_string }} &raquo;
+  		<a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  	</h2>
+  	{{ post.content | strip_html | truncatewords: 100 }}
+  	<a href="{{ post.url }}">read more</a>
+
   </div>
 {% endfor %}
 </li>
